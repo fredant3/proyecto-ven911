@@ -14,6 +14,7 @@ user = "postgres"
 password = "postgres"
 
 
+
 def get_connection():
     conn = connect(host=host, port=port, dbname=dbname, user=user, password=password)
     return conn
