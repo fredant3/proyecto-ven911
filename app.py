@@ -81,7 +81,7 @@ def update_users(id):
 
     cur.execute(
         "UPDATE users SET username = %s, password = %s WHERE id = %s RETURNING *",
-        (username, password, id),)
+        (username, password, id))
     
     updated_user = cur.fetchone()
 
